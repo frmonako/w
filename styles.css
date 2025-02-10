@@ -1,0 +1,153 @@
+body {
+    background-color: #ffffff;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    color: white;
+}
+
+.container {
+    background-color: #ffffff00;
+    padding: 10px;
+    border-radius: 10px;
+    width: 90vw;
+    height: 90vh;
+    display: flex;
+}
+
+.left {
+    background-color: #ff562200;
+    flex-grow: 1;
+    height: 100%;
+    border-radius: 8px 0 0 8px;
+    flex-direction: column;
+    display: flex;
+    align-items: flex-start; /* Align items to the top */
+    justify-content: flex-start; /* Align content to the right */
+    padding: 10px; /* Space around the content */
+}
+
+.left img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    margin-bottom: 10px; /* Space between image and text */
+}
+
+.left .text {
+    font-family: 'Inter', sans-serif; /* Apply the Inter font */
+    font-size: 14px; /* Adjust the font size */
+    color: rgb(0, 0, 0); /* Text color */
+    font-weight: 600; /* Set font weight */
+    font-size: 47.5px;
+    margin-bottom: 10px;
+}
+
+.left .description {
+    font-family: 'Inter', sans-serif;
+    font-size: 21px; /* Smaller font for description */
+    color:  #565656; /* Lighter text color for description */
+    font-weight: 300; /* Regular font weight */
+    line-height: 1.4; /* Space out lines in description */
+    max-width: 475px; /* Set the max width for text */
+    word-wrap: break-word; /* Break long words if needed */
+    overflow-wrap: break-word; /* Ensure long words are wrapped properly */
+    line-height: 1.4;
+}
+
+.right {
+    background-color: #ffffff;
+    width: 875px;
+    height: 100%;
+    border-radius: 0 8px 8px 0;
+    max-width: 875px;
+    min-width: 875px;
+    margin-left: 10px;
+}
+
+.right .desc{
+    font-family: 'Inter', sans-serif;
+    margin-bottom: 17.5px;
+    font-size: 17px;
+    font-weight: 600;
+    color: black;
+    padding-left: 26px;
+}
+
+.right .top-container {
+    background-color: #ffffff;
+    height: 210px; /* Set the desired height */
+    width: 100%;
+    border-radius: 8px 8px 0 0;
+    display: flex; /* Use flexbox to align the boxes horizontally */
+    justify-content: space-between; /* Distribute the boxes evenly */
+    padding: 0 10px; /* Space between the boxes */
+    border-radius: 8px 8px 0 0; /* Optional rounded top corners */
+}
+
+.right .top-container .square-box {
+    background-color: #ffffff; /* Color of the square boxes */
+    height: 200px; /* Height of the box */
+    width: 200px; /* Width of the box */
+    border-radius: 25px; /* Optional: rounded corners for the boxes */
+    outline: 1.35px solid #5a5a5a3e;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: background-color 0.2s cubic-bezier(0.3, 0, 0.5, 1);
+}
+
+.right .top-container .square-box:hover {
+    background-color: #94949412; /* Color of the square boxes */
+    cursor: grab;
+}
+
+.right .top-container .square-box .ctnr {
+    width: 79%;
+    height: 79%;
+}
+
+.right .top-container .square-box .ctnr .imgs {
+    width: 57.5px;
+    height: 57.5px;
+    border-radius: 12.5px;
+    outline: 1px solid #5a5a5a3e;
+}
+
+.right .top-container .square-box .ctnr .ttxt {
+    font-family: 'Inter', sans-serif; /* Apply the Inter font */
+    color: black;
+    font-size: 18.5px;
+}
+
+.right .top-container .square-box .ctnr .ddsc {
+    font-family: 'Inter', sans-serif; /* Apply the Inter font */
+    color: #565656;
+    font-size: 16px;
+}
+
+button {
+    font-family: PlusJakartaSans, -apple-system, BlinkMacSystemFont, Segoe UI,
+      Roboto, Oxygen, Cantarell, Helvetica Neue, Ubuntu, sans-serif;
+    font-size: 1rem;
+    align-items: center;
+    height: 38px;
+    border-radius: 10px;
+    font-weight: 600;
+    padding: 0 1.2rem;
+    color: #ddd;
+    border: none;
+    cursor: crosshair;
+    box-shadow: 0 0.5rem 1rem rgba(143, 142, 142, 0.15) !important;
+    background: #000000;
+    margin-top: 23px;
+    transition: background-color 0.2s cubic-bezier(0.3, 0, 0.5, 1);
+  }
+
+  button:hover {
+    background: #2b2a2a;
+  }
+  
